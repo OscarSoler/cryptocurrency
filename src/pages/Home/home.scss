@@ -1,0 +1,12 @@
+@import "/src/sass/mixins.scss";
+
+.home {
+	&__title {
+		text-align: center;
+	}
+
+	&__navfilter {
+		display: flex;
+		align-items: center;
+	}
+}

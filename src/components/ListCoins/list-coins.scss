@@ -1,0 +1,6 @@
+.listCoins {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+	margin-top: 2rem;
+}

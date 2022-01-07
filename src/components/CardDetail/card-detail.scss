@@ -1,0 +1,27 @@
+.card-detail {
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
+		border-bottom: 1px solid #cecece;
+		padding-bottom: .5rem;
+	}
+
+	&__name,
+	&__price {
+		font-weight: bold;
+	}
+
+	&__percentage {
+		text-align: right;
+		font-size: .9rem;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: .5rem;
+	}
+}

@@ -1,0 +1,64 @@
+@import "/src/sass/mixins.scss";
+
+.buttonsFilter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: .5rem;
+	gap: .5rem;
+	flex-wrap: wrap;
+	width: 50%;
+
+	&__button {
+		background-color: #fff;
+		border-radius: .5rem;
+		border: 1px solid #ccc;
+		cursor: pointer;
+		padding: 1rem 1.5rem;
+		font-weight: bold;
+		position: relative;
+		display: flex;
+		align-items: center;
+		transition: .3s all;
+
+
+		&--up {
+			color: #02AB4B;
+			position: relative;
+
+			&::before {
+				@include triangle("up", #02AB4B, 7px);
+				margin-right: .5rem;
+			}
+
+			&.active {
+				background-color: #02AB4B;
+				color: #fff;
+
+				&::before {
+					@include triangle("up", #fff, 7px);
+				}
+			}
+		}
+
+		&--down {
+			color: red;
+			position: relative;
+
+			&::before {
+				@include triangle("down", red, 7px);
+				margin-right: .5rem;
+			}
+
+			&.active {
+				background-color: red;
+				color: #fff;
+
+				&::before {
+					@include triangle("down", #fff, 7px);
+				}
+			}
+		}
+
+	}
+}
